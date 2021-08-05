@@ -55,17 +55,20 @@ Builds the app for production to the `build` folder.
 
 All the test cases are wriiten within the component folder
 
-## routing
+## Test Coverage
+
+To run test cases run the command `yarn run test`
+To get test coverage run the command `yarn test --coverage`
+
+## Routing
 
 We use react-router-config for routing and to handle containers of projects.
-
 you can refer react-router-config documentation for further clerifications
 
 ## Warning
 
 We are also pushing the .env file to git for testing purposes otherwise its not advisable to push these kind of sensitive files to git
 
-## Test Coverage
+## Misc
 
-To run test cases run the command `yarn run test`
-To get test coverage run the command `yarn test --coverage`
+if yarn not exists install it as `npm i yarn -g`
