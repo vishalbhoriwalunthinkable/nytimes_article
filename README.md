@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# NY Times Most Popular
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started
 
-## Available Scripts
+Steps to run `NY Times Most Popular` application
 
-In the project directory, you can run:
+## Installation
 
-### `yarn start`
+git clone `clone url`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+cd into cloned folder
+cd folder
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+`yarn install`
+(It will install required dependencies and link modules internally.)
 
-### `yarn test`
+## Folder Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After creation, your project should look like this:
 
-### `yarn build`
+```
+mayaedu-subscription/
+  README.md
+  node_modules/
+  yarn.lock
+  package.json
+  .env
+  .eslinitrc.json
+  src/
+    apis/
+    components/
+    containers/
+    routes/
+    styles/
+    views/
+    App.jsx
+    index.jsx
+    index.html
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Available scripts
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To start application in development environment.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`yarn start`
+Runs the app in the development mode. Open `http://localhost:3000` to view it in the browser.
 
-### `yarn eject`
+`yarn run test`
+Runs the test cases
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`yarn run build`
+Builds the app for production to the `build` folder.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Component Structure and test cases
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+All the test cases are wriiten within the component folder
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## routing
 
-## Learn More
+We use react-router-config for routing and to handle containers of projects.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+you can refer react-router-config documentation for further clerifications
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Warning
 
-### Code Splitting
+We are also pushing the .env file to git for testing purposes otherwise its not advisable to push these kind of sensitive files to git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Test Coverage
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To run test cases run the command `yarn run test`
+To get test coverage run the command `yarn test --coverage`

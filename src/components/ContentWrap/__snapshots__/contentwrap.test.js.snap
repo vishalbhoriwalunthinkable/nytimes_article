@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentWrap isFetching true 1`] = `
+<div
+  className="makeStyles-root-1"
+  data-testid="loading-component"
+  style={
+    Object {
+      "margin": "0px auto",
+      "minHeight": "200px",
+      "width": "10%",
+    }
+  }
+>
+  <div
+    className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+    role="progressbar"
+    style={
+      Object {
+        "height": 40,
+        "width": 40,
+      }
+    }
+  >
+    <svg
+      className="MuiCircularProgress-svg"
+      viewBox="22 22 44 44"
+    >
+      <circle
+        className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+        cx={44}
+        cy={44}
+        fill="none"
+        r={20.2}
+        strokeWidth={3.6}
+        style={Object {}}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`ContentWrap when isError false 1`] = `
+<div>
+  Child
+</div>
+`;
+
+exports[`ContentWrap when isError true 1`] = `
+<div
+  className="ContentWrap"
+>
+  Something went wrong...
+</div>
+`;
+
+exports[`ContentWrap when isFetching false 1`] = `
+<div>
+  Child
+</div>
+`;
